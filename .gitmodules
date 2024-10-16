@@ -1,0 +1,3 @@
+[submodule "offline_inference"]
+	path = offline_inference
+	url = https://github.com/HuaweiAIFAE/pyacl_samples.git
