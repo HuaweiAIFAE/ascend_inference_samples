@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        form {text-align: center;}
+        img {text-align: center;}
+        </style>
+        <link href="https://cdn-icons-png.flaticon.com/512/5969/5969073.png" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
+        <div>
+            <img src="https://1000logos.net/wp-content/uploads/2018/08/Huawei-Logo.png" style="width: 10vw; text-align: center;">
+        </div>
+        <h1>HUAWEI AI FAE</h1>
+        <h2>YOLOv5 Inference App</h2>
+        <br>
+        <form action="http://{{app_variables.host_ip}}:{{app_variables.inference_port}}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required accept="image/png, image/jpeg, image/jpg"/>
+            <input type="submit"/>
+        </form>
+        <p>Inference time: {{'%.5f' % inference_time}} s</p>
+        <p></p>
+        <div>
+            <img src="http://{{app_variables.host_ip}}:{{app_variables.host_port}}/files/{{image_path}}" height="630">
+        </div>
+    </body>
+</html>

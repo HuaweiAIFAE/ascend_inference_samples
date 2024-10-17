@@ -1,0 +1,7 @@
+# Configuration for inference
+model_name: "/workspace/weights/stable-diffusion-v1-5"
+device: "npu"  # or "cpu" for non-NPU inference
+prompt: "A futuristic city skyline at night"
+num_inference_steps: 50
+guidance_scale: 7.5
+output_dir: "output/"
